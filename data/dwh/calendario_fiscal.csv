@@ -1,0 +1,5 @@
+trimestre,fecha_inicio,fecha_fin,estado_cierre
+2026-Q1,2026-01-01,2026-03-31,cerrado
+2026-Q2,2026-04-01,2026-06-30,cerrado
+2026-Q3,2026-07-01,2026-09-30,cerrado
+2026-Q4,2026-10-01,2026-12-31,abierto

@@ -1,0 +1,6 @@
+categoria,tipo,requiere_aprobacion
+Viaticos,operacional,si
+Consultoria,operacional,si
+Tecnologia,operacional,no
+Marketing,operacional,no
+Servicios,operacional,no

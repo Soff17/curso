@@ -1,0 +1,49 @@
+gasto_id,empleado_id,destino,dias,autorizacion_previa,autorizado_por
+1,33,Monterrey,9,si,Director Norte
+2,26,Houston,5,si,Director Norte
+3,18,Ciudad de Mexico,2,si,Director Norte
+4,39,Houston,9,si,Director Norte
+21,13,Madrid,9,si,Director Norte
+22,32,Houston,2,si,Director Norte
+23,21,Houston,3,si,Director Norte
+24,33,Madrid,9,si,Director Norte
+41,12,Houston,9,si,Director Norte
+42,18,Houston,7,si,Director Norte
+43,27,Bogota,9,no,
+44,6,Ciudad de Mexico,9,si,Director Norte
+61,6,Lima,5,si,Director Sur
+62,40,Ciudad de Mexico,6,si,Director Sur
+63,23,Bogota,2,si,Director Sur
+64,38,Lima,9,si,Director Sur
+81,9,Lima,5,si,Director Sur
+82,9,Lima,6,si,Director Sur
+83,11,Bogota,6,si,Director Sur
+84,25,Bogota,5,si,Director Sur
+101,7,Houston,3,si,Director Sur
+102,23,Monterrey,7,no,
+103,2,Ciudad de Mexico,9,si,Director Sur
+104,20,Houston,7,si,Director Sur
+121,32,Houston,4,si,Director Centro
+122,34,Bogota,8,si,Director Centro
+123,30,Lima,5,si,Director Centro
+124,5,Lima,8,si,Director Centro
+141,12,Ciudad de Mexico,2,no,
+142,13,Houston,2,si,Director Centro
+143,34,Bogota,4,si,Director Centro
+144,12,Houston,6,si,Director Centro
+161,27,Ciudad de Mexico,8,si,Director Centro
+162,23,Bogota,6,si,Director Centro
+163,27,Madrid,9,si,Director Centro
+164,34,Houston,9,si,Director Centro
+181,34,Madrid,3,si,Director Occidente
+182,15,Ciudad de Mexico,3,si,Director Occidente
+183,22,Houston,4,si,Director Occidente
+184,23,Bogota,7,si,Director Occidente
+201,37,Lima,5,si,Director Occidente
+202,18,Lima,5,si,Director Occidente
+203,37,Madrid,4,si,Director Occidente
+204,17,Ciudad de Mexico,8,si,Director Occidente
+221,4,Madrid,4,si,Director Occidente
+222,7,Lima,7,si,Director Occidente
+223,5,Madrid,7,si,Director Occidente
+224,17,Ciudad de Mexico,2,si,Director Occidente

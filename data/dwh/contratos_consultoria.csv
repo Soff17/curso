@@ -1,0 +1,21 @@
+contrato_id,division,proveedor,monto,fecha_inicio,estado,aprobado_por_comite
+1,Norte,Asesores Delta,125000.0,2026-07-01,vigente,si
+2,Sur,Consultora Beta,44000.0,2026-01-10,vigente,no_aplica
+3,Centro,Asesores Delta,44000.0,2026-06-25,vigente,no_aplica
+4,Occidente,Grupo Sigma,29000.0,2026-06-20,vigente,no_aplica
+5,Norte,Grupo Sigma,138000.0,2026-02-22,vigente,si
+6,Sur,Asesores Delta,148000.0,2026-07-10,vigente,si
+7,Centro,Grupo Sigma,34000.0,2026-01-10,terminado,no_aplica
+8,Occidente,Asesores Delta,104000.0,2026-02-10,vigente,si
+9,Norte,Consultora Alfa,101000.0,2026-09-11,vigente,si
+10,Sur,Consultora Alfa,34000.0,2026-03-20,vigente,no_aplica
+11,Centro,Consultora Alfa,50000.0,2026-03-17,vigente,no
+12,Occidente,Grupo Sigma,27000.0,2026-03-12,vigente,no_aplica
+13,Norte,Grupo Sigma,118000.0,2026-04-25,vigente,si
+14,Sur,Consultora Beta,76000.0,2026-03-18,vigente,no
+15,Centro,Consultora Beta,85000.0,2026-04-01,vigente,no
+16,Occidente,Grupo Sigma,158000.0,2026-07-09,vigente,si
+17,Norte,Consultora Alfa,55000.0,2026-03-18,vigente,no
+18,Sur,Asesores Delta,107000.0,2026-01-22,vigente,si
+19,Centro,Grupo Sigma,82000.0,2026-01-08,terminado,si
+20,Occidente,Asesores Delta,122000.0,2026-04-18,vigente,si

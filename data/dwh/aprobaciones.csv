@@ -1,0 +1,31 @@
+aprobacion_id,tipo,referencia,aprobador,fecha,resultado
+1,contrato,C-1,Director de Division,2026-07-09,aprobado
+2,exceso_presupuestal,Centro,Comite Financiero,2026-08-09,aprobado
+3,contrato,Centro,Director de Division,2026-06-05,rechazado
+4,exceso_presupuestal,Centro,Comite Financiero,2026-08-21,aprobado
+5,viaje,Norte,Comite Financiero,2026-07-11,aprobado
+6,contrato,Occidente,Director de Division,2026-07-12,rechazado
+7,viaje,Norte,Comite Financiero,2026-03-01,aprobado
+8,contrato,Centro,Director de Division,2026-06-19,rechazado
+9,contrato,Occidente,Comite Financiero,2026-08-11,aprobado
+10,exceso_presupuestal,Sur,Director de Division,2026-05-11,aprobado
+11,exceso_presupuestal,Occidente,Comite Financiero,2026-06-03,rechazado
+12,contrato,Sur,Director de Division,2026-02-05,aprobado
+13,exceso_presupuestal,Occidente,Director de Division,2026-03-23,aprobado
+14,exceso_presupuestal,C-14,Comite Financiero,2026-09-22,rechazado
+15,contrato,Sur,Director de Division,2026-01-09,aprobado
+16,exceso_presupuestal,Sur,Director de Division,2026-08-22,rechazado
+17,viaje,Centro,Comite Financiero,2026-06-20,aprobado
+18,viaje,Occidente,Comite Financiero,2026-05-02,rechazado
+19,viaje,Sur,Director de Division,2026-08-26,aprobado
+20,viaje,Occidente,Director de Division,2026-06-09,rechazado
+21,contrato,Occidente,Comite Financiero,2026-04-19,aprobado
+22,viaje,Norte,Comite Financiero,2026-08-20,aprobado
+23,contrato,C-23,Comite Financiero,2026-08-11,rechazado
+24,viaje,Centro,Director de Division,2026-02-18,aprobado
+25,viaje,C-25,Comite Financiero,2026-02-20,aprobado
+26,exceso_presupuestal,Occidente,Director de Division,2026-04-14,rechazado
+27,contrato,Sur,Director de Division,2026-05-25,rechazado
+28,viaje,Sur,Comite Financiero,2026-06-21,aprobado
+29,contrato,C-29,Director de Division,2026-03-20,rechazado
+30,contrato,Sur,Director de Division,2026-03-26,rechazado

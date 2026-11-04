@@ -1,0 +1,21 @@
+proveedor,categoria,pais,calificacion
+Proveedor-1,Tecnologia,Colombia,3
+Proveedor-2,Tecnologia,Estados Unidos,4
+Proveedor-3,Servicios,Estados Unidos,5
+Proveedor-4,Tecnologia,Colombia,2
+Proveedor-5,Marketing,Colombia,4
+Proveedor-6,Viaticos,España,5
+Proveedor-7,Marketing,Mexico,2
+Proveedor-8,Viaticos,España,3
+Proveedor-9,Servicios,España,2
+Proveedor-10,Viaticos,Mexico,5
+Proveedor-11,Consultoria,Peru,3
+Proveedor-12,Servicios,Mexico,4
+Proveedor-13,Marketing,Peru,5
+Proveedor-14,Consultoria,Peru,1
+Proveedor-15,Viaticos,Colombia,4
+Proveedor-16,Tecnologia,Peru,3
+Proveedor-17,Tecnologia,Mexico,5
+Proveedor-18,Consultoria,Colombia,3
+Proveedor-19,Tecnologia,Peru,3
+Proveedor-20,Tecnologia,Colombia,4

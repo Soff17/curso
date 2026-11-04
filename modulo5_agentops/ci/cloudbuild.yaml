@@ -1,0 +1,57 @@
+# Pipeline: tests -> gate de Faithfulness -> build -> deploy a Agent Engine
+# Ejecutar: gcloud builds submit --config modulo5_agentops/ci/cloudbuild.yaml \
+#             --substitutions=_REGION=us-central1,_THRESHOLD=0.85 .
+# `adk deploy agent_engine` y sus flags existen en google-adk 2.11 (verificado con --help); el despliegue real no se ha ejecutado.
+# OJO: el despliegue empaqueta la carpeta del agente. El capstone importa shared/, rag/, sqlagent/, bi_agents/ y data/:
+# inclúyelos con --extra_packages (o reorganiza el agente como paquete autocontenido) y valida con un despliegue de prueba.
+substitutions:
+  _REGION: us-central1
+  _THRESHOLD: "0.85"
+  _REPO: agentes-bi
+  _AGENT_DIR: capstone/src/capstone_agent
+
+steps:
+  - id: install
+    name: python:3.11
+    entrypoint: bash
+    args: ["-c", "pip install -r requirements.txt --target /workspace/.deps"]
+
+  - id: unit-tests
+    name: python:3.11
+    entrypoint: bash
+    args: ["-c", "PYTHONPATH=/workspace/.deps python data/seed_data.py && PYTHONPATH=/workspace/.deps python -m pytest -q"]
+
+  # GATE: si Faithfulness < umbral el paso falla (exit 1) y los siguientes NO se ejecutan.
+  - id: eval-faithfulness-gate
+    name: python:3.11
+    entrypoint: bash
+    args:
+      - -c
+      - >
+        PYTHONPATH=/workspace/.deps:/workspace:/workspace/modulo2_rag_reranking/src:/workspace/modulo5_agentops/src
+        python -m agentops.eval_gate --threshold ${_THRESHOLD} --report /workspace/eval_report.json
+
+  - id: build-image
+    name: gcr.io/cloud-builders/docker
+    args: ["build", "-t", "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/agente:$SHORT_SHA", "."]
+
+  - id: push-image
+    name: gcr.io/cloud-builders/docker
+    args: ["push", "${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/agente:$SHORT_SHA"]
+
+  - id: deploy-agent-engine
+    name: python:3.11
+    entrypoint: bash
+    args:
+      - -c
+      - >
+        pip install google-adk &&
+        adk deploy agent_engine --project=$PROJECT_ID --region=${_REGION} --trace_to_cloud --display_name=agente-financiero ${_AGENT_DIR}
+
+artifacts:
+  objects:
+    location: gs://${PROJECT_ID}-agent-eval/$BUILD_ID
+    paths: ["eval_report.json"]
+
+options:
+  logging: CLOUD_LOGGING_ONLY

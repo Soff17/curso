@@ -1,0 +1,13 @@
+centro_id,division,nombre,responsable
+11,Norte,CC Norte Operacion,Responsable NOperacion
+12,Norte,CC Norte Comercial,Responsable NComercial
+13,Norte,CC Norte Soporte,Responsable NSoporte
+21,Sur,CC Sur Operacion,Responsable SOperacion
+22,Sur,CC Sur Comercial,Responsable SComercial
+23,Sur,CC Sur Soporte,Responsable SSoporte
+31,Centro,CC Centro Operacion,Responsable COperacion
+32,Centro,CC Centro Comercial,Responsable CComercial
+33,Centro,CC Centro Soporte,Responsable CSoporte
+41,Occidente,CC Occidente Operacion,Responsable OOperacion
+42,Occidente,CC Occidente Comercial,Responsable OComercial
+43,Occidente,CC Occidente Soporte,Responsable OSoporte
